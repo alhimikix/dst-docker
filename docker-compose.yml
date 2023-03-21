@@ -10,7 +10,8 @@ services:
       - game:/root/dontstarvetogether_dedicated_server
       - ./DoNotStarveTogether:/root/.klei/DoNotStarveTogether
       - ./mods:/root/dontstarvetogether_dedicated_server/mods
-
+    ports:
+     - "10999:10999"
 
 volumes:
   game:
