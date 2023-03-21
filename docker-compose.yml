@@ -12,6 +12,9 @@ services:
       - ./dedicated_server_mods_setup.lua:/root/dedicated_server_mods_setup.lua
     ports:
      - "10999:10999"
+     - "11000:11000"
+     - "12346:12346"
+     - "12347:12347"
 
 volumes:
   game:
