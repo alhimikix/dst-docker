@@ -1,0 +1,2 @@
+mkdir DoNotStarveTogether
+mkdir mods
