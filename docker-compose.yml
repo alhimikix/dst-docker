@@ -9,7 +9,7 @@ services:
     volumes:
       - game:/root/dontstarvetogether_dedicated_server
       - ./DoNotStarveTogether:/root/.klei/DoNotStarveTogether
-      - ./mods:/root/dontstarvetogether_dedicated_server/mods
+      - ./dedicated_server_mods_setup.lua:/root/dedicated_server_mods_setup.lua
     ports:
      - "10999:10999"
 

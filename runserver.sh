@@ -36,6 +36,8 @@ run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)
 run_shared+=(-console)
 run_shared+=(-cluster "$cluster_name")
 run_shared+=(-monitor_parent_process $$)
+rm "$install_dir/mods/dedicated_server_mods_setup.lua"
+cp "$HOME/dedicated_server_mods_setup.lua" "$install_dir/mods/dedicated_server_mods_setup.lua"
 
 "${run_shared[@]}" -shard Caves  | sed 's/^/Caves:  /' &
 "${run_shared[@]}" -shard Master | sed 's/^/Master: /'
